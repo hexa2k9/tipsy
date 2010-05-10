@@ -95,7 +95,7 @@
         
         tip: function() {
             if (!this.$tip) {
-                this.$tip = $('<div class="tipsy"></div>').html('<div class="tipsy-arrow"></div><div class="tipsy-inner"/></div>');
+                this.$tip = $('<div class="tipsy"></div>').html('<div class="tipsy-arrow"></div><div class="tipsy-inner" style="max-width:'+this.options.maxWidth+'px"/></div>');
             }
             return this.$tip;
         },
@@ -176,7 +176,8 @@
         offset: 0,
         opacity: 0.8,
         title: 'title',
-        trigger: 'hover'
+        trigger: 'hover',
+        maxWidth: '250'
     };
     
     // Overwrite this method to provide options on a per-element basis.
