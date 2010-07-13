@@ -95,7 +95,7 @@
         
         tip: function() {
             if (!this.$tip) {
-                this.$tip = $('<div class="tipsy"></div>').html('<div class="tipsy-arrow"></div><div class="tipsy-inner" style="max-width:' + this.options.maxWidth + 'px"/></div>');
+                this.$tip = $('<div class="tipsy"></div>').html('<div class="tipsy-arrow"></div><div class="tipsy-inner" style="max-width:' + this.options.maxWidth + 'px"></div>');
             }
             return this.$tip;
         },
